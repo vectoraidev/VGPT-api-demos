@@ -1,0 +1,66 @@
+{
+  "name": "vector-smart-contract-analyzer",
+  "version": "1.0.0",
+  "description": "AI-powered smart contract analysis tool using Vector AI",
+  "main": "src/analyzer.js",
+  "bin": {
+    "contract-analyzer": "./src/analyzer.js"
+  },
+  "scripts": {
+    "start": "node src/analyzer.js",
+    "dev": "nodemon src/analyzer.js",
+    "test": "jest",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "build": "npm run lint && npm test",
+    "serve": "node src/server.js",
+    "discover": "node src/discovery.js",
+    "monitor": "node src/monitor.js"
+  },
+  "keywords": [
+    "smart-contracts",
+    "security",
+    "analysis",
+    "vector-ai",
+    "blockchain",
+    "ethereum",
+    "solidity",
+    "audit",
+    "vulnerability"
+  ],
+  "author": "Vector AI Community",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vectoraidev/smart-contract-analyzer"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.8.1",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "cheerio": "^1.0.0-rc.12",
+    "puppeteer": "^21.5.2",
+    "pdf-parse": "^1.1.1",
+    "winston": "^3.11.0",
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1",
+    "table": "^6.8.1",
+    "node-cron": "^3.0.3",
+    "redis": "^4.6.10",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "eslint": "^8.54.0",
+    "eslint-config-standard": "^17.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+} 
